@@ -1,0 +1,161 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=10cm,marginparwidth=7cm,marginparsep=1cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2E64FE}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{MANUEL ARROYAVE}
+  \tagline{  }
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{3cm}{110940.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{matheos.mc2@gmail.com}
+  %\mailaddress{ 67 street \#53 - 108 }
+  % \phone{+33666312478}
+ 
+  
+  \phone{+57 3192540509}   \location{Medellín, Colombia}     %\quad{Age: 30}
+  
+  %\github{https://github.com/matheos} % I'm just making this up though.
+  %\orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{PROFESSIONAL SUMARY}
+
+\cvevent{FULL TIME RESEARCHER}{DUNE Collaboration Research}{August 2019 -- Present}{EIA}
+Coordinate design and optimization of digital circuits and high performance for Detector electronics for Acquiring PHotons from Neutrinos (DAPHNE), at DUNE colaboration.\\
+Experience:
+\begin{itemize}
+\item Search for industry partners to develop hardware manufacture capacities.
+\item Support the design of the hardware and the control scheme of the board.
+\item Director of the hardware programming group of the warm electronics.
+\item Study of the analog impedance of the analog inputs.
+\item Analisys of the signal due to wavelets algorithms.
+\item Power optimization at gateware level.
+\end{itemize}
+\divider
+\cvevent{HARDWARE DEVELOPER AND SUPPLIER}{}{} {}
+Supplier of hardware for different instrumentation groups at University of Antioquia.\\
+\divider
+\cvevent{}{Kerr Ellipsometer}{November 2018 -- May 2019} {GES, U. de A.}
+Construction of each one of the instrumentation modules of a Kerr Ellipsometer in order to measure magnetic properties of thin films. (Dielectric Tensor Calculation).\\
+
+Each one of the following items where developed:
+\begin{itemize}
+\item DAQ (Spartan 3 FPGA) Low distortion 3MSPS.
+\item Helmholtz coils (2KOe, 6A).
+\item AC power amplifier for fast switch of magnetic field (200W). 
+\item Micrometric rotatory stages (5 grad secs). \item Photodiode preamplification (FDS 100 Variable Gain). 
+\end{itemize}
+\divider
+\cvevent{}{Diverse Tribology Equipment}{April 2018 -- December 2018}{CIDEMAT}
+Super slow control industrial steppers for tribology measurements: 
+\begin{itemize}
+\item Rockwell's measurements due to microstepers, microprocessor programming (Raspberry Pi and Arduino)
+\item Vicker's due to the conditioning of microscope and mechanical timming for the motor control.
+\item Calotester measurements for thin films, with arduino control.
+\end{itemize}
+
+\newpage
+
+\cvsection[page2sidebar]{PROFESSIONAL SUMARY}
+
+\cvevent{}{Kerr Magnetometer SIU}{November 2017 -- April 2018}{SIU, Medellín}
+Data acquisition and automatization equipment (3MSPS) using Spartan 3 FPGA. Xantrex XFR150-18,  photodiodes and 1T electromagnet automatization.
+\begin{itemize}
+\item DAQ (Spartan 3) 
+\item CORDIC II for DAQ signal.
+\item LabView.
+\end{itemize}
+\divider
+\cvevent{}{Kerr Magnetometer U. de A.}{May 2016 -- October 2018}{ Medellín}
+Low cost hardware design for Kerr measurements. Implemented with a raspberry Pi. High $\Delta I / I $ signal. Very low cost.
+\begin{itemize}
+\end{itemize}
+\divider
+
+
+\cvevent{}{Physics Labs DAQ boxes}{August 2010 -- December 2011}{GES, U. de A.}
+Design of DAQ systems for the physics and engineering laboratories. Arduino core.
+
+% \cvsection{QUALITIES}
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+%  \wheelchart{2cm}{1cm}{%
+%   10/13em/accent!30/Organisé, 
+%   25/9em/accent!60/Ponctuel,
+%   5/12em/accent!10/Sociable, 
+%   20/12em/accent!40/Courageux,
+%   5/8em/accent!20/Capacité d'adaptation,
+%   30/9em/accent/Dynamique,
+%   5/8em/accent!20/Curieux}
+
+\end{document}
